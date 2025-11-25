@@ -1,6 +1,6 @@
 import Task from '../models/Task.js';
 
-const isEmpty = (value) => value === null || value === undefined || value === '';
+export const isEmpty = (value) => value === null || value === undefined || value === '';
 
 export const validateTaskInput = (req, res, next) => {
     const { title, status, dueDate } = req.body;
